@@ -1,7 +1,3 @@
-```sh
-pnpm create astro@latest -- --template basics
-```
-
 ## 🚀 Project Structure
 
 ```text

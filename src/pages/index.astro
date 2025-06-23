@@ -18,7 +18,7 @@ import LogoCutted from '@/assets/logo-cutted.svg'
         <img 
           id="hero-key-logo"
           src={HeroKeyLogo.src}
-          class="absolute w-full object-cover  opacity-0 transition-opacity"
+          class="absolute w-full object-cover  opacity-0 transition-opacity duration-700"
         />
         <img 
           id="hero-key-background"
@@ -93,11 +93,12 @@ import LogoCutted from '@/assets/logo-cutted.svg'
     pageLoad
       .to("#logo-mask", {opacity: 1})
       .to("#hero-key-background", {opacity: 1}, "<")
-      .to("#hero-key-logo", {opacity: 1, duration: 4}, "<")
-      .to("#hero-key", {scale: 1.25, duration: 1}, "<")
+      .to("#hero-key-logo", {opacity: 1}, "<")
+      .to("#hero-key", {scale: 1.25}, "<")
       .to("#hero-footer", {opacity: 1}, "<")
-      .to("#hero-play-button", {opacity: 1}, "<")
-      .to("#logo-vi", {opacity: 1}, "<")
+      .to("#hero-play-button", {opacity: 1, duration: 1.5}, "<")
+      .to("#logo-vi", {opacity: 1, duration: 1.5}, "<")
+      .to("#hero-key-logo", {transitionDuration: "0.150ms"})
   });
 
   timeline

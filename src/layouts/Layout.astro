@@ -55,6 +55,15 @@ import KeepScrolling from "@/assets/keep-scrolling.svg";
     color: white;
 		margin: 0;
 		width: 100%;
+  }
+
+	body::-webkit-scrollbar {
+		width: var(--scroll-size, 5px);
+		height: var(--scroll-size, 5px);
+	}
+
+	body::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-thumb-color, white);
 	}
 
   @font-face {

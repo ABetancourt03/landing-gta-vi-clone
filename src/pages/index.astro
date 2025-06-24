@@ -113,6 +113,8 @@ import PlayButtonIcon from "@/assets/play-button.svg"
       },
       0.15
     )
+    .to("#hero-footer", { display: "none" }, "<")
+    .to("#hero-play-button", { pointerEvents: "none" }, "<")
     .to(
       "#hero-key",
       {
@@ -121,8 +123,6 @@ import PlayButtonIcon from "@/assets/play-button.svg"
       },
       0.45
     )
-    .to("#hero-footer", { display: "none" }, "<")
-    .to("#hero-play-button", { pointerEvents: "none" }, "<")
-    .to("#full-logo", { opacity: 1, duration: 0.3 })
-    .to("#logo-mask", { display: "none" }, 0.75)
+    .to("#logo-mask", { display: "none", duration: 0.75 })
+    .to("#full-logo", { opacity: 1, duration: 1 }, "<")
 </script>

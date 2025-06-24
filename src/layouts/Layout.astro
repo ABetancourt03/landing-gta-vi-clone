@@ -1,19 +1,21 @@
 ---
-import KeepScrolling from "@/assets/keep-scrolling.svg";
+import KeepScrolling from "@/assets/keep-scrolling.svg"
 ---
 
 <!doctype html>
 <html lang="es">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<title>Landing GTA VI Clone</title>
-	</head>
-	<body>
+    <title>Landing GTA VI Clone</title>
+  </head>
+  <body>
     <slot />
-    <KeepScrolling class="fixed bottom-3 right-0 left-0 mx-auto text-pink-300 drop-shadow-2xl animate-bounce-pulse" />
-	</body>
+    <KeepScrolling
+      class="animate-bounce-pulse fixed right-0 bottom-3 left-0 mx-auto text-pink-300 drop-shadow-2xl"
+    />
+  </body>
 </html>
 
 <style is:global>
@@ -46,25 +48,25 @@ import KeepScrolling from "@/assets/keep-scrolling.svg";
     }
   }
 
-	html,
+  html,
   body {
     background: #111117;
     height: 300vh;
     overflow-x: hidden;
     overscroll-behavior: none;
     color: white;
-		margin: 0;
-		width: 100%;
+    margin: 0;
+    width: 100%;
   }
 
-	body::-webkit-scrollbar {
-		width: var(--scroll-size, 5px);
-		height: var(--scroll-size, 5px);
-	}
+  body::-webkit-scrollbar {
+    width: var(--scroll-size, 5px);
+    height: var(--scroll-size, 5px);
+  }
 
-	body::-webkit-scrollbar-thumb {
+  body::-webkit-scrollbar-thumb {
     background-color: var(--scroll-thumb-color, white);
-	}
+  }
 
   @font-face {
     font-family: GTA;

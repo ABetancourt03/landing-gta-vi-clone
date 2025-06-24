@@ -34,10 +34,10 @@ import PlayButtonIcon from "@/assets/play-button.svg"
       />
     </header>
 
-    <button class="inset-0 m-auto inline-block cursor-pointer">
+    <button class="inset-0 m-auto inline-block">
       <PlayButtonIcon
         id="hero-play-button"
-        class="m-auto mt-10 size-32 rounded-full text-white opacity-0 backdrop-blur-3xl transition-transform duration-500 hover:scale-110"
+        class="m-auto mt-10 size-32 cursor-pointer rounded-full text-white opacity-0 backdrop-blur-3xl transition-transform duration-500 hover:scale-110"
       />
     </button>
 
@@ -116,4 +116,7 @@ import PlayButtonIcon from "@/assets/play-button.svg"
       },
       0.45
     )
+    .to("#hero-footer", { display: "none" }, "<")
+    .to("#hero-play-button", { pointerEvents: "none" }, "<")
+    .to("#logo-mask", { display: "none" }, 0.6)
 </script>
